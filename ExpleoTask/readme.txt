@@ -8,3 +8,4 @@
 8.After executing we will generate the report. and reports are stored in Reports folder we will get extent report .html file
 9.Please refer attaches .html file in provided github link
 Please refer for the attached auto.jpg file it shows testcases executed.
+Java Classes can be found in src/com please initialize those packages in the local system
