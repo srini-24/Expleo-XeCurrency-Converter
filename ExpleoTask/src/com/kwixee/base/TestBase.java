@@ -73,7 +73,7 @@ public static String BasicElements=System.getProperty("user.dir")+"\\src\\test\\
 	@BeforeSuite
 	public void setExtent() throws InterruptedException{
 
-		fileName=getReportFolderName()+"/Quixy_"+TestUtil.appenTime_1()+".html";
+		fileName=getReportFolderName()+"/ExpleoTask"+TestUtil.appenTime_1()+".html";
 		ExtentManager.createInstance(fileName);
 		startTime=TestUtil.appenTime_1();
 		System.out.println("File path "+fileName);
