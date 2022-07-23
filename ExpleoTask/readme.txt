@@ -10,3 +10,4 @@
 10.Please refer for the attached auto.jpg file it shows testcases executed.
 11.Java Classes can be found in src/com please initialize those packages in the local system
 12.auto.jpg file is have executed in my local system and kept the screenshot of all the six test cases
+13.Please Refer Reports Folder
