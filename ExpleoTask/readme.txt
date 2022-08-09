@@ -1,7 +1,7 @@
 1.Create Project in Eclipse IDE and install TestNG ,Maven Dependencies,POM XML.
 2.Download Expleo_S1,Expleotestcases,TestUtil,extenttestmanager,extentmanager,Reportreading,TestBase JAVA CLASSES from provided github link
 (Path to find class Files : Expleo-XeCurrency-Converter/ExpleoTask/src/com/expleo/test/) for Expleo_S1,Expleotestcases
-(Path to find class Files :  Expleo-XeCurrency-Converter/ExpleoTask/src/com/kwixee/) for TestBase
+(Path to find class Files :  Expleo-XeCurrency-Converter/ExpleoTask/src/com/kwixee/) for TestBase,ExtentReports and TestUtil
 3.Using above classes create packages in eclipse.
 4.The Expleo_S1.java file contains all the methods and main part of the code.
 5.Expleotestcases.java file contains the testcases (test priorities) where we have to execute the all testcases. 
