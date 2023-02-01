@@ -268,6 +268,102 @@ public class Expleo_S1 {
 		return true;
 	}
 	
+	public boolean CurrencyConvertAUDtoINR(WebDriver driver){
+
+		try{
+			
+			TestUtil.waitForElement_visibilityOfElementLocated(driver, xelogo_locator);
+			status=TestUtil.waitForElementisDisplay(driver, xelogo_locator);
+			if(status) {
+				TestUtil.Log(true,"XE Logo Displayed");
+			}else {
+				TestUtil.Log(false,"XE Logo display Failed");
+			}
+			
+			TestUtil.waitForElement(driver, accept_locator);
+			Thread.sleep(1000);
+			status=TestUtil.ClickElement(driver, accept_locator);		
+			if(status) {
+				TestUtil.Log(status,"Click on Accept Passed");
+			}else {
+				TestUtil.Log(status,"Click on Accept failed");
+				return false;
+			}
+			
+			
+			TestUtil.waitForElement(driver, close_locator);
+			Thread.sleep(1000);
+			status=TestUtil.ClickElement(driver, close_locator);		
+			if(status) {
+				TestUtil.Log(status,"Click on Close Icon Passed");
+			}else {
+				TestUtil.Log(status,"Click on Close Icon failed");
+				return false;
+			}
+			
+			
+			
+			Thread.sleep(3000);
+			status=CurrencyConvertMethod(driver,"3000","AUD","INR");
+			if(!status){
+				TestUtil.Log(status, "Currency Converter From AUD to INR  Method Failed");
+				return false;
+			}
+		}
+		catch(Exception e){
+			return false;
+		}
+		return true;
+	}
+	
+	public boolean CurrencyConvertGBPtoINR(WebDriver driver){
+
+		try{
+			
+			TestUtil.waitForElement_visibilityOfElementLocated(driver, xelogo_locator);
+			status=TestUtil.waitForElementisDisplay(driver, xelogo_locator);
+			if(status) {
+				TestUtil.Log(true,"XE Logo Displayed");
+			}else {
+				TestUtil.Log(false,"XE Logo display Failed");
+			}
+			
+			TestUtil.waitForElement(driver, accept_locator);
+			Thread.sleep(1000);
+			status=TestUtil.ClickElement(driver, accept_locator);		
+			if(status) {
+				TestUtil.Log(status,"Click on Accept Passed");
+			}else {
+				TestUtil.Log(status,"Click on Accept failed");
+				return false;
+			}
+			
+			
+			TestUtil.waitForElement(driver, close_locator);
+			Thread.sleep(1000);
+			status=TestUtil.ClickElement(driver, close_locator);		
+			if(status) {
+				TestUtil.Log(status,"Click on Close Icon Passed");
+			}else {
+				TestUtil.Log(status,"Click on Close Icon failed");
+				return false;
+			}
+			
+			
+			
+			Thread.sleep(3000);
+			status=CurrencyConvertMethod(driver,"3000","GBP","INR");
+			if(!status){
+				TestUtil.Log(status, "Currency Converter From GBP to INR  Method Failed");
+				return false;
+			}
+		}
+		catch(Exception e){
+			return false;
+		}
+		return true;
+	}
+	
 	public boolean SendMoney(WebDriver driver){
 
 		try{
@@ -555,7 +651,7 @@ public class Expleo_S1 {
 				TestUtil.Log(false,"Click on Convert Button failed");
 			}
 			
-			Thread.sleep(1500);
+			Thread.sleep(3000);
 			TestUtil.waitForElement_visibilityOfElementLocated(driver, By.xpath("//p[contains(@class,'result__BigRate')]"));
 			String convertedRate=TestUtil.GetText(driver, By.xpath("//p[contains(@class,'result__BigRate')]"));
 			if(convertedRate.length()==0){
